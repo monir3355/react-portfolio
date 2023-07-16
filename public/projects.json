@@ -1,0 +1,98 @@
+[
+  {
+    "id": 1,
+    "image_half": "https://i.ibb.co/CvJZCm8/magic-dance-half.png",
+    "image_full": "https://i.ibb.co/MVDTK2Y/magic-dance-arts-web-app.png",
+    "name": "Magic Dance Arts School",
+    "desc_points": [
+      "User can registration and login. Also login with social media",
+      "Use Admin dashboard, Instructors Dashboard, Student Dashboard.",
+      "Admin dashboard: Admin can Make User to Admin, User to Instructor, Instructor to Admin and Also Make Admin to Instructor. Also Admin Can approve deny, and feedback classes.",
+      "Instructor dashboard: Add classes, Update Classes, delete classes and also see admin feedback and how many student enrolled his/her classes.",
+      "Student dashboard: Student can select classes, see his/her all selected classes, student can payment his/her selected classes, and also see how many class payment. And also see payment history."
+    ],
+    "technologies": [
+      "HTML5",
+      "TailwindCSS",
+      "Daisy UI",
+      "ReactJS",
+      "Firebase Authentication",
+      "ExpressJS",
+      "NodeJS",
+      "MongoDB"
+    ],
+    "category": "MERN Stack"
+  },
+  {
+    "id": 2,
+    "image_half": "https://i.ibb.co/CvJZCm8/magic-dance-half.png",
+    "image_full": "https://i.ibb.co/MVDTK2Y/magic-dance-arts-web-app.png",
+    "name": "Magic Dance Arts School",
+    "desc_points": [
+      "User can registration and login. Also login with social media",
+      "Use Admin dashboard, Instructors Dashboard, Student Dashboard.",
+      "Admin dashboard: Admin can Make User to Admin, User to Instructor, Instructor to Admin and Also Make Admin to Instructor. Also Admin Can approve deny, and feedback classes.",
+      "Instructor dashboard: Add classes, Update Classes, delete classes and also see admin feedback and how many student enrolled his/her classes.",
+      "Student dashboard: Student can select classes, see his/her all selected classes, student can payment his/her selected classes, and also see how many class payment. And also see payment history."
+    ],
+    "technologies": [
+      "HTML5",
+      "TailwindCSS",
+      "Daisy UI",
+      "ReactJS",
+      "Firebase Authentication",
+      "ExpressJS",
+      "NodeJS",
+      "MongoDB"
+    ],
+    "category": "MERN Stack"
+  },
+  {
+    "id": 3,
+    "image_half": "https://i.ibb.co/CvJZCm8/magic-dance-half.png",
+    "image_full": "https://i.ibb.co/MVDTK2Y/magic-dance-arts-web-app.png",
+    "name": "Magic Dance Arts School",
+    "desc_points": [
+      "User can registration and login. Also login with social media",
+      "Use Admin dashboard, Instructors Dashboard, Student Dashboard.",
+      "Admin dashboard: Admin can Make User to Admin, User to Instructor, Instructor to Admin and Also Make Admin to Instructor. Also Admin Can approve deny, and feedback classes.",
+      "Instructor dashboard: Add classes, Update Classes, delete classes and also see admin feedback and how many student enrolled his/her classes.",
+      "Student dashboard: Student can select classes, see his/her all selected classes, student can payment his/her selected classes, and also see how many class payment. And also see payment history."
+    ],
+    "technologies": [
+      "HTML5",
+      "TailwindCSS",
+      "Daisy UI",
+      "ReactJS",
+      "Firebase Authentication",
+      "ExpressJS",
+      "NodeJS",
+      "MongoDB"
+    ],
+    "category": "MERN Stack"
+  },
+  {
+    "id": 4,
+    "image_half": "https://i.ibb.co/CvJZCm8/magic-dance-half.png",
+    "image_full": "https://i.ibb.co/MVDTK2Y/magic-dance-arts-web-app.png",
+    "name": "Magic Dance Arts School",
+    "desc_points": [
+      "User can registration and login. Also login with social media",
+      "Use Admin dashboard, Instructors Dashboard, Student Dashboard.",
+      "Admin dashboard: Admin can Make User to Admin, User to Instructor, Instructor to Admin and Also Make Admin to Instructor. Also Admin Can approve deny, and feedback classes.",
+      "Instructor dashboard: Add classes, Update Classes, delete classes and also see admin feedback and how many student enrolled his/her classes.",
+      "Student dashboard: Student can select classes, see his/her all selected classes, student can payment his/her selected classes, and also see how many class payment. And also see payment history."
+    ],
+    "technologies": [
+      "HTML5",
+      "TailwindCSS",
+      "Daisy UI",
+      "ReactJS",
+      "Firebase Authentication",
+      "ExpressJS",
+      "NodeJS",
+      "MongoDB"
+    ],
+    "category": "Front-end"
+  }
+]
