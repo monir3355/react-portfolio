@@ -1,34 +1,12 @@
-import React, { useState } from "react";
-import { Link, Outlet } from "react-router-dom";
+import React from "react";
+import { Tab, Tabs, TabList, TabPanel } from "react-tabs";
+import "react-tabs/style/react-tabs.css";
+import Technologies from "./Technologies";
+import Experience from "./Experience";
+import Educations from "./Educations";
+import Courses from "./Courses";
 
 const Skills = () => {
-  const [selectedFilter, setSelectedFilter] = useState("/technologies");
-  const projectCategories = [
-    {
-      text: "Technologies",
-      filterValue: "/technologies",
-      isSelected: selectedFilter === "/technologies",
-    },
-    {
-      text: "Experience",
-      filterValue: "/experience",
-      isSelected: selectedFilter === "/experience",
-    },
-    {
-      text: "Educations",
-      filterValue: "/educations",
-      isSelected: selectedFilter === "/educations",
-    },
-    {
-      text: "Courses",
-      filterValue: "/courses",
-      isSelected: selectedFilter === "/courses",
-    },
-  ];
-
-  const filterProjects = (category) => {
-    setSelectedFilter(category);
-  };
   return (
     <section
       name="skills"
@@ -40,26 +18,29 @@ const Skills = () => {
         </h2>
       </div>
       <div className="md:w-10/12 mx-auto">
-        <div className="flex flex-wrap gap-2 justify-center items-center mb-8">
-          {projectCategories?.map((button, index) => (
-            <Link to={button.filterValue}>
-              <button
-                key={index}
-                className={`px-4 py-2 rounded-full whitespace-nowrap ${
-                  button.isSelected
-                    ? "bg-primaryLight text-white"
-                    : "bg-white text-primaryLight2"
-                }`}
-                onClick={() => filterProjects(button.filterValue)}
-              >
-                {button.text}
-              </button>
-            </Link>
-          ))}
-        </div>
-      </div>
-      <div className="md:w-10/12 mx-auto">
-        <Outlet />
+        <Tabs>
+          <TabList className="flex justify-center gap-2">
+            <Tab className="border-0 py-2 px-4 cursor-pointer">
+              Technologies
+            </Tab>
+            <Tab className="border-0 py-2 px-4 cursor-pointer">Educations</Tab>
+            <Tab className="border-0 py-2 px-4 cursor-pointer">Experience</Tab>
+            <Tab className="border-0 py-2 px-4 cursor-pointer">Courses</Tab>
+          </TabList>
+
+          <TabPanel className="mt-10">
+            <Technologies />
+          </TabPanel>
+          <TabPanel>
+            <Educations />
+          </TabPanel>
+          <TabPanel>
+            <Experience />
+          </TabPanel>
+          <TabPanel>
+            <Courses />
+          </TabPanel>
+        </Tabs>
       </div>
     </section>
   );

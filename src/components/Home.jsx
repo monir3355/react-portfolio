@@ -10,7 +10,7 @@ const Home = () => {
       <div className="px-8 md:px-0 flex flex-col justify-center h-full">
         <div className="flex flex-col-reverse lg:flex-row gap-16 md:w-10/12 mx-auto">
           <div className="lg:w-2/3 space-y-3">
-            <p className="text-pink-600">Hi, my name is</p>
+            <p className="text-primaryLight2">Hi, my name is</p>
             <h1 className="text-4xl sm:text-6xl font-bold text-[#ccd6f6]">
               Md. Monirul Islam
             </h1>
@@ -24,20 +24,31 @@ const Home = () => {
               solving. My ultimate goal is I want to explore new technology for
               longtime and create top projects.
             </p>
-            <div>
+            <div className="flex gap-4">
               <Link to="projects" smooth={true} duration={500}>
-                <button className="text-white group border-2 px-6 py-3 my-2 flex items-center hover:bg-pink-600 hover:border-pink-600">
+                <button className="text-white group border-2 border-primaryLight2 px-6 py-3 my-2 flex items-center  hover:bg-primaryLight2 hover:border-primaryLight2">
                   View Projects
                   <span className="group-hover:rotate-90 duration-300">
                     <HiArrowNarrowRight className="ml-3 " />
                   </span>
                 </button>
               </Link>
+              <a
+                href="https://drive.google.com/file/d/1vOMflUYKOVK1EIHnb_Sy65xcTL1MYlmE/view?usp=drive_link"
+                target="_blank"
+              >
+                <button className="text-white group border-2 border-primaryLight2 px-6 py-3 my-2 flex items-center  hover:bg-primaryLight2 hover:border-primaryLight2">
+                  View Resume
+                  <span>
+                    <HiArrowNarrowRight className="ml-3 " />
+                  </span>
+                </button>
+              </a>
             </div>
           </div>
           <div className="lg:w-1/3">
             <img
-              className="h-[300px] w-[300px] rounded-full border-4 border-pink-600 mx-auto"
+              className="h-[300px] w-[300px] rounded-full border-4 border-primaryLight2 mx-auto"
               src={monirImg}
               alt=""
             />

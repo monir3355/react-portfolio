@@ -10,7 +10,7 @@ const Header = () => {
     setNav(!nav);
   };
   return (
-    <header className="bg-[#0a192f] text-gray-300 z-30">
+    <header className="bg-[#0a192f] text-gray-300 z-30 static top-0">
       <nav className="fixed  text-white py-4 flex justify-between items-center container mx-auto border-b">
         <div>
           <Link
@@ -49,7 +49,6 @@ const Header = () => {
               Contact
             </Link>
           </li>
-          <li className="btnBorder relative cursor-pointer">My Resume</li>
         </ul>
 
         <div onClick={handleNav} className="md:hidden z-20">
@@ -67,12 +66,37 @@ const Header = () => {
               : "absolute top-0 left-0 w-full h-screen bg-[#0a192f] flex flex-col gap-6 justify-center items-center"
           }
         >
-          <li className="text-2xl">Home</li>
-          <li className="text-2xl">About</li>
-          <li className="text-2xl">Skills</li>
-          <li className="text-2xl">Projects</li>
-          <li className="text-2xl">Contact</li>
-          <li className="text-2xl">My Resume</li>
+          <li className="btnBorder relative cursor-pointer">
+            <Link onClick={handleNav} to="home" smooth={true} duration={500}>
+              Home
+            </Link>
+          </li>
+          <li className="btnBorder relative cursor-pointer">
+            <Link onClick={handleNav} to="about" smooth={true} duration={500}>
+              About
+            </Link>
+          </li>
+          <li className="btnBorder relative cursor-pointer">
+            <Link onClick={handleNav} to="skills" smooth={true} duration={500}>
+              Skills
+            </Link>
+          </li>
+          <li className="btnBorder relative cursor-pointer">
+            <Link
+              onClick={handleNav}
+              to="projects"
+              smooth={true}
+              duration={500}
+            >
+              Projects
+            </Link>
+          </li>
+          <li className="btnBorder relative cursor-pointer">
+            {" "}
+            <Link onClick={handleNav} to="contact" smooth={true} duration={500}>
+              Contact
+            </Link>
+          </li>
         </ul>
       </nav>
       {/* Social media */}
